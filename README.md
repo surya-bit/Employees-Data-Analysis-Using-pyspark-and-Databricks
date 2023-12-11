@@ -1,4 +1,7 @@
 # Employees-Data-Analysis-Using-pyspark-and-Databricks
 
-Run the code in Databricks Notebooks for better understanding . Followed a Medallion Architecture and ingested the four dataframes "Employees","countries","departments","locations" into the bronze layer. Infered the schema and joined the dataframes using common primary keys.
-Transformed the data using pyspark commands and later visualized it onto dashboards.
+1. In Databricks Notebooks, initiated the process by ingesting four essential dataframes: "Employees," "Countries," "Departments," and "Locations" into the Bronze Layer. This layer acts as the raw, unprocessed data storage.
+2. After ingesting the data,I proceeded in infering the schema of each dataframe. This step is crucial for understanding the structure and types of data within each dataframe. Utilized PySpark commands to join these dataframes based on common primary keys. This process creates a more comprehensive dataset by combining information from different sources. The joined data is then loaded into the Silver Layer, which serves as an intermediate storage for cleaned and transformed data.
+3. Employed PySpark commands to perform data transformations on the joined dataset in the Silver Layer. This involved operations such as filtering, aggregation, or any other data manipulations necessary to meet the analytical requirements.
+4. Once the data is transformed, consolidated the relevant information into a single dataframe named "Employees." This dataframe encapsulates the enriched and processed data about employees, derived from the initial four dataframes. This consolidated dataframe is then moved to the Gold Layer, which acts as the final, refined data storage layer.
+5. Concluded the data processing journey by visualizing the enriched employee data on dashboards. Utilized Databricks' visualization capabilities to create insightful charts, graphs, and dashboards that provide a comprehensive overview of HR-related metrics. 
